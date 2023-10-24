@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sandra's Portfolio Website">
+    <meta name="keywords" content="web, portfolio, data science, software development, web development">
+    <meta name="author" content="Sandra Campuzano">
+
+        <title>Sandra Campuzano's Porfolio</title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    </head>
+
+<body>
+    <h1>Currency Converter</h1>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown"><button class="dropdownbtn">About</button>
+            <div class="dropdown-content">
+                <a href="aboutme.html">About Me</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </li>
+
+
+            <li class="dropdown"><button class="dropdownbtn">Projects</button>
+                <div class="dropdown-content">
+                    <a href="ffxivpf.html">Interactive Character Profile</a>
+                    <a href="index.html">Python project</a>
+                    <a href="index.html">C++ project</a>
+
+                </div>
+            </li>
+            
+        <div class="iconlinks">
+            
+            <div class="linkspace"><a href="https://github.com/scampuzano7" target="_blank"><img src="{{ url_for('static', filename='images/social.png') }}" alt="GitHub"></a></div>
+            <div class="linkspace"><a href="https://www.linkedin.com/in/sandraicampuzano/" target="_blank"><img src="{{ url_for('static', filename='images/linkedincolor.png') }}" alt="LinkedIn"></a></div>
+            <div class="linkspace"><a href="https://www.polywork.com/sandra_campuzano" target="_blank"><img src="{{ url_for('static', filename='images/polywork.png') }}" alt="Polywork"></a></div>
+        </div>
+
+    </ul>
+
+
+    <div class="sitecontainer">
+
+        <div class="container">
+            <h2>Here is your Currency Conversion</h2>
+        <div class="resultbox">{{ custom_string }}{{ result }}</div>
+        <a href="/" class="backbtn">Go back</a>
+            </div>
+        </div>
+
+        </div>
+
+    <div class="footer">
+        Currency Converter by Sandra Campuzano
+    </div>
+
+</body>
+</html>
+
+
