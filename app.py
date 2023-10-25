@@ -51,7 +51,8 @@ def calculate():
     return render_template('result.html', result=formatted_result, custom_string=custom_string)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
 
 
