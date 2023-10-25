@@ -155,6 +155,7 @@ input, select, .numbtn, .backbtn, .resultbox {
   color: black;
 }
 
+/* Submission button */
   .numbtn:hover {
     background-color: blue;
   }
@@ -164,21 +165,25 @@ input, select, .numbtn, .backbtn, .resultbox {
     margin: 70px 0px 0px 200px;
   }
 
+  /* Input box */
   input {
     width: 200px;
     margin: 20px 0px 0px 150px;
   }
 
+  /* Selection drop down */
   select {
     width: 125px;
     margin: 50px 0px 0px 0px;
   }
 
+  /* Results box aka the output */
   .resultbox {
     width: 200px;
     margin: 50px 0px 0px 150px;
   }
 
+  /*Back button to return to the previous page to start over */
   .backbtn {
     text-decoration: none;
     width: 100px;

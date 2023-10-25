@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# Dictionary to map operations to corresponding words
+# Dictionary for currency symbols based on selection
 operation_words = {
     'usdaud': '$',
     'usdeuro': '€',
@@ -42,14 +42,16 @@ def calculate():
     else:
         result = "Invalid operation"
 
+    #Solution is formatted to show two decimal places
     formatted_result = "{:.2f}".format(result)
-
+    
+    #Prints the designated currency symbol
     custom_string = "{}".format(operation_word)
 
     return render_template('result.html', result=formatted_result, custom_string=custom_string)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8001)
+    app.run(debug=True)
 
 
 
