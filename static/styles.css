@@ -75,7 +75,7 @@ li a {
 }
 
 li a:hover, .dropdown:hover .dropdownbtn {
-  color: rgb(53, 93, 129);
+  color: pink;
 }
 
 li.dropdown {
@@ -134,7 +134,7 @@ li.dropdown {
   background-color: rgb(53, 93, 129, 0.3);
   height: 250px;
   border-radius: 15px;
-  border: 3px solid greenyellow;
+  border: 1px solid grey;
   color: white;
 }
 
@@ -147,7 +147,7 @@ h2 {
 
 input, select, .numbtn, .backbtn, .resultbox {
   padding: 10px;
-  border: 1px solid greenyellow;
+  border: 1px solid grey;
   border-radius: 15px;
   font-size: 12px;
   background-color: #f1f1f1;
@@ -157,7 +157,8 @@ input, select, .numbtn, .backbtn, .resultbox {
 
 /* Submission button */
   .numbtn:hover {
-    background-color: blue;
+    background-color: pink;
+    color: white;
   }
 
   .numbtn {
@@ -191,7 +192,8 @@ input, select, .numbtn, .backbtn, .resultbox {
   }
 
   .backbtn:hover {
-    background-color: blue;
+    background-color: pink;
+    color: white;
   }
 
   .backbtn, .resultbox {
