@@ -50,67 +50,73 @@ def calculate():
 
     else:
         operation_word = "Unknown Operation"
-
+#USD to other currencies
     if operation == 'usdaud':
-        result = num1 * 1.57
+        result = num1 * 1.53
     elif operation == 'usdeuro':
-        result = num1 * 0.94
+        result = num1 * 0.92
     elif operation == 'usdnok':
-        result = num1 * 0.94
-    elif operation == 'nokusd':
-        result = num1 * 0.11
-    elif operation == 'nokaud':
-        result = num1 * 0.16
-    elif operation == 'nokeuro':
-        result = num1 * 0.10
-    elif operation == 'audnok':
-        result = num1 * 6.28
-    elif operation == 'euronok':
-        result = num1 * 9.78
+        result = num1 * 10.70
     elif operation == 'usdjpy':
-        result = num1 * 113.89
+        result = num1 * 151.32
+    elif operation == 'usdcny':
+        result = num1 * 7.22
+#AUD to other currencies
     elif operation == 'audjpy':
-        result = num1 * 86.88
+        result = num1 * 99.12
+    elif operation == 'audnok':
+        result = num1 * 7.01
+    elif operation == 'audusd':
+        result = num1* 0.65
+    elif operation == 'audeuro':
+        result = num1 * 0.60
+    elif operation == 'audcny':
+        result = num1 * 4.73
+#EURO to other currencies
     elif operation == 'eurojpy':
-        result = num1 * 120.01
+        result = num1 * 164.07
+    elif operation == 'eurousd':
+        result = num1 * 1.08
+    elif operation == 'euroaud':
+       result = num1 * 1.66
+    elif operation == 'euronok':
+        result = num1 * 11.60
+    elif operation == 'eurocny':
+        result = num1 * 7.72
+#NOK to other currencies
     elif operation == 'nokjpy':
-        result = num1 * 12.20
+        result = num1 * 14.14
+    elif operation == 'nokusd':
+        result = num1 * 0.093
+    elif operation == 'nokaud':
+        result = num1 * 0.14
+    elif operation == 'nokeuro':
+        result = num1 * 0.0086
+    elif operation == 'nokcny':
+        result = num1 * 0.67
+#JPY to other currencies
     elif operation == 'jpyusd':
-        result = num1 * 0.0088
+        result = num1 * 0.0066
     elif operation == 'jpyaud':
-        result = num1 * 0.0115
+        result = num1 * 0.010
     elif operation == 'jpyeuro':
-        result = num1 * 0.0083
+        result = num1 * 0.0061
     elif operation == 'jpynok':
-        result = num1 * 0.082
+        result = num1 * 0.071
+    elif operation == 'jpycny':
+        result = num1 * 0.048
+#CNY to other currencies
     elif operation == 'cnyusd':
         result = num1 * 0.14
     elif operation == 'cnyaud':
-        result = num1 * 0.19
+        result = num1 * 0.21
     elif operation == 'cnyeuro':
-        result = num1 * 0.14
+        result = num1 * 0.13
     elif operation == 'cnynok':
-        result = num1 * 1.55
+        result = num1 * 1.48
     elif operation == 'cnyjpy':
-        result = num1 * 15.07
-    elif operation == 'usdcny':
-        result = num1 * 6.90
-    elif operation == 'audcny':
-        result = num1 * 5.25
-    elif operation == 'eurocny':
-        result = num1 * 7.11
-    elif operation == 'nokcny':
-        result = num1 * 0.64
-    elif operation == 'jpycny':
-        result = num1 * 0.067
-    elif operation == 'audusd':
-        result = num1* 0.63
-    elif operation == 'audeuro':
-        result = num1 * 0.60
-    elif operation == 'eurousd':
-        result = num1 * 1.06
-    elif operation == 'euroaud':
-       result = num1 * 1.67
+        result = num1 * 20.97
+#Invalid operation
     else:
         result = "Invalid operation"
 
