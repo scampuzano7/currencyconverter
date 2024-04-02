@@ -19,8 +19,9 @@ body{
     line-height: 1.5;
     padding: 0;
     margin: 0;
-    background-color: black;
-
+    background-image: url(static/images/vapobg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
 /* Stylizaton for the footer/bottom area */
@@ -199,3 +200,20 @@ input, select, .numbtn, .backbtn, .resultbox {
   .backbtn, .resultbox {
     text-align: center;
   }
+
+  /* Fade in to home page from welcome page upon clicking play button */
+
+.pageFade {
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
