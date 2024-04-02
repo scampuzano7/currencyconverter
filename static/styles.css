@@ -41,7 +41,7 @@ body {
     border-top: 0.5px solid white;
     width: 85%;
     margin: 0px 100px 0px 100px;
-    position: absolute;
+    position: static;
   }
 
 /* Stylization for navigation bar */
